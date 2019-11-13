@@ -1,0 +1,8 @@
+The models have been implemented using the Pyomo language. In all cases we use the Pyomo class of abstract models.
+
+GJJ_f1: model with objective function f1
+GJJ_f2: model with objective function f2
+GJJ_f3: model with objective function f3
+
+resolver.py:  Contains the Pyomo commands that call the abstract model, the data and the Gurobi solver.
+postprocess2.py: Organize the answers obtained by Gurobi in an .xls file.

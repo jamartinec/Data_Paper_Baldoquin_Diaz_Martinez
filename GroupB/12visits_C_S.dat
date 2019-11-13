@@ -1,0 +1,77 @@
+param m:= 2;  # de camiones
+param n:= 6; # de clientes
+#param nl:= 4;  # de intervalos de tiempo
+param t_days:= 5;  # de días
+param p_num:= 7;  # de patrones
+param D:= 50; # duración máxima del día de trabajo.
+
+
+ 	  	  
+param tao := 
+1 	1
+2	1
+3	1
+4	1
+5	1
+6	1
+7	1
+;
+	
+param e :=
+1	0
+2	0
+3	0
+4	0
+5	0
+6	0
+7	0
+;
+
+param L := 
+2	40
+3	40
+4	40
+5	40
+6	40
+7   40;
+
+	
+param d:	1	2	3	4	5	6	7	8:=
+1	0.00	3.82	5.50	5.03	7.45	3.74	4.00	0.00
+2	3.82	0.00	3.46	2.38	4.75	4.83	2.23	3.82
+3	5.50	3.46	0.00	1.15	2.03	3.63	1.57	5.50
+4	5.03	2.38	1.15	0.00	2.51	4.04	1.12	5.03
+5	7.45	4.75	2.03	2.51	0.00	5.55	3.45	7.45
+6	3.74	4.83	3.63	4.04	5.55	0.00	3.07	3.74
+7	4.00	2.23	1.57	1.12	3.45	3.07	0.00	4.00
+8	0.00	3.82	5.50	5.03	7.45	3.74	4.00	0.00
+;
+
+
+
+      
+param a:1	2	3	4	5:=
+1	1	0	0	0	0
+2	0	1	0	0	0
+3	0	0	1	0	0
+4	0	0	0	1	0
+5	0	0	0	0	1
+6	0	1	0	1	0
+7	0	0	1	0	1; 
+
+param nv :=
+ 2  2
+ 3  2
+ 4  2
+ 5  2
+ 6  2
+ 7	2;
+
+#SUBCONJUNTOS
+set subcl1:=;
+set subcl2:=2 3 4 5 6 7;
+#Patrones de visita para clientes en subcl2. o sea. con frecuencia 2 (2 veces por semana). 
+
+set L1:=1 2 3 4 5 ;
+set L2:= 6 7; 
+# 
